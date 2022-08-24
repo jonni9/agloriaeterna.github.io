@@ -30,6 +30,8 @@ h4{
     display: flex;
     background-image: linear-gradient(rgba(35, 99, 68, 0.63), rgba(48, 138, 94, 0.61), rgba(60, 177, 120, 0.63),rgba(60, 177, 120, 0.63)), url("./Taça.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   
 .head-container 
@@ -102,6 +104,7 @@ h4{
     display: flex;
     flex-direction: column;
     margin: 0;
+    filter: drop-shadow(1px 1px 2px rgb(0, 34, 21));
 }
 
 .jogo-image-1{
@@ -118,6 +121,7 @@ h4{
     color: #89f1bd;
     justify-content: center;
     border-radius: 10px;
+    filter: drop-shadow(1px 1px 2px black);
 }
 
 .jogo-image-2{
@@ -133,7 +137,9 @@ h4{
     font-size: xx-small;
     color: #89f1bd;
     justify-content: center;
-    border-radius: 10px;}
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 2px black);
+}
 
  .jogo-info{
     height: 10%;
@@ -148,6 +154,7 @@ h4{
 
 
 @media (max-width: 800px){
+    
     .card-header{
         width: 100%;
         display: flex;
@@ -171,5 +178,8 @@ h4{
     }
     .container-fase{
         flex-direction: column;
+    }
+    .grupo-container{
+        min-width: 300px;
     }
 }
